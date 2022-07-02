@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+html, body {
+    height: auto;
+    margin: auto;
+    border: auto;
+    font-family: 'Lato', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #04AA6D;;
+  }
+.active {
+  background-color: #04AA6D;
+}
+.slider{
+    width: 500px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+.slides{
+    width: calc(500px *4);
+    animation: glisse 15s infinite;
+}
+.slide{
+    float: left;
+}
+.fot{
+    padding: 30px;
+    text-align: left;
+    display: inline-block;
+    padding: 50px;
+}
+.ok{
+    padding: 30px;
+    text-align: right;
+    display: inline-block;
+    padding: 50px;
+}
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-500px);
+    }
+    50% {
+        transform: translateX(-1000px);
+    }
+    75% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
+    /*background-image: url("C:\\Users\\Adama\\Downloads\\Site-vente-basket\\Site-vente-basket\\img\\ooooo.jpeg");*/
+    background-color: #cccccc;
+    background-image: linear-gradient(red, yellow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: auto;
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, .78);
+}
+footer
+{
+  background-color: #333;
+  height: 180px;
+}
+
+footer p
+{
+    text-align: center;
+}
